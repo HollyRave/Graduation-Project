@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
-
-    [SerializeField] private Object _prefab;
+    [SerializeField] private Object _leftTrap;
+    [SerializeField] private Object _rightTrap;
     [SerializeField] private Transform[] _spawnPoints;
+    [SerializeField] private Transform _leftSpawnPoint;
+    [SerializeField] private Transform _rightSpawnPoint;
     [SerializeField] private float _timeBetweenSpawn;
 
     private float _elapsedTime = 0;
@@ -12,6 +14,8 @@ public class ObstacleSpawner : MonoBehaviour
     private void Update()
     {
         _elapsedTime += Time.deltaTime;
+
+        Debug.Log(Time.deltaTime);
 
         if (_elapsedTime >= _timeBetweenSpawn)
         {
@@ -22,6 +26,13 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void Spawn()
     {
-        Instantiate(_prefab, _spawnPoints[Random.Range(0, _spawnPoints.Length)]);
+        if (Random.Range(0, _spawnPoints.Length) == 0)
+        {
+            Instantiate(_leftTrap, _leftSpawnPoint);
+        }
+        else
+        {
+            Instantiate(_rightTrap, _rightSpawnPoint);
+        }
     }
 }

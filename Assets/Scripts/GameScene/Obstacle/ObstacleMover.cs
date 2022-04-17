@@ -6,6 +6,6 @@ public class ObstacleMover : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(Vector2.down * _speed * Time.deltaTime);
+        transform.Translate(Vector2.right * _speed * Time.deltaTime);
     }
 }
