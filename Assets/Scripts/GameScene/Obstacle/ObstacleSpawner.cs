@@ -15,8 +15,6 @@ public class ObstacleSpawner : MonoBehaviour
     {
         _elapsedTime += Time.deltaTime;
 
-        Debug.Log(Time.deltaTime);
-
         if (_elapsedTime >= _timeBetweenSpawn)
         {
             _elapsedTime = 0;
