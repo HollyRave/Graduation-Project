@@ -15,6 +15,6 @@ public class Hero : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-        Died.Invoke();
+        Died?.Invoke();
     }
 }

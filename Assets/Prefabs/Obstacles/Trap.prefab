@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5199099152451057299}
   - component: {fileID: 5199099152451057298}
-  - component: {fileID: 5199099152451057297}
+  - component: {fileID: 8672216453072650014}
   - component: {fileID: 5199099152451057296}
   - component: {fileID: 5199099152451057295}
   m_Layer: 0
-  m_Name: LeftTrap
+  m_Name: Trap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &5199099152451057297
-EdgeCollider2D:
+--- !u!61 &8672216453072650014
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,22 +98,19 @@ EdgeCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.007744223, y: -0.012906879}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78, y: 1.16}
+    newSize: {x: 0.78, y: 1.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4547488, y: 1.1341863}
   m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.31447887, y: -0.53650427}
-  - {x: -0.23632123, y: -0.35070053}
-  - {x: -0.15587334, y: -0.33365968}
-  - {x: 0.0014674142, y: 0.53560424}
-  - {x: 0.18115784, y: -0.3141719}
-  - {x: 0.2748003, y: -0.3549888}
-  - {x: 0.3229963, y: -0.5480962}
-  - {x: -0.11136241, y: -0.57387197}
-  - {x: -0.31329092, y: -0.5411693}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &5199099152451057296
 MonoBehaviour:
   m_ObjectHideFlags: 0
